@@ -326,12 +326,12 @@ function About() {
           I build scalable web applications where solid engineering meets
           practical, real-world problem solving.
         </h2>
-        <div className="mt-12 grid grid-cols-1 items-center gap-10 md:ml-auto md:max-w-3xl md:grid-cols-[240px_1fr]">
+        <div className="mt-12 grid grid-cols-1 items-start gap-10 md:grid-cols-[280px_1fr]">
           <a
             href="/certificate.jpg"
             target="_blank"
             rel="noreferrer"
-            className="group block w-full overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-md"
+            className="group block w-full max-w-[280px] overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-md"
             aria-label="View Full Stack Development certificate"
           >
             <img
