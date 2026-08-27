@@ -330,7 +330,24 @@ function About() {
           I build scalable web applications where solid engineering meets
           practical, real-world problem solving.
         </h2>
-        <div className="mt-12 max-w-2xl md:ml-auto">
+        <div className="mt-12 grid grid-cols-1 items-center gap-10 md:ml-auto md:max-w-3xl md:grid-cols-[240px_1fr]">
+          <a
+            href="/certificate.jpg"
+            target="_blank"
+            rel="noreferrer"
+            className="group block w-full overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-md"
+            aria-label="View Full Stack Development certificate"
+          >
+            <img
+              src="/certificate.jpg"
+              alt="KodNest Full Stack Development course certificate issued to Sanju"
+              className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <span className="block px-3 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground transition-colors group-hover:text-accent">
+              View Certificate ↗
+            </span>
+          </a>
+
           <p className="text-pretty leading-relaxed text-muted-foreground md:text-lg">
             I'm a Full Stack Developer with hands-on experience designing,
             developing and deploying web applications using React.js,
@@ -341,20 +358,6 @@ function About() {
             performance by 30% and shipped responsive UI components used in
             production.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
-              Certification:
-            </span>
-            {certifications.map((cert) => (
-              <span
-                key={cert.label}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-foreground"
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                {cert.label}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
