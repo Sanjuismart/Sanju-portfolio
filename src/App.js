@@ -133,10 +133,6 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-const certifications = [
-  { label: "Full Stack Web Development", url: "#" },
-];
-
 function SidebarNav() {
   const [open, setOpen] = useState(false);
 
